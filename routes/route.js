@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 
 router.get("/", (req, res) =>{
-    res.send("Hello World again.....!")
+    res.send("Welcome to my CSE341 assignments.....! I am Bernard Olayemi Michael")
 });
 
 router.get("/contacts", require("./user"));
