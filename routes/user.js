@@ -4,8 +4,17 @@ const router = express.Router();
 const usercontroller = require("../controller/contacts");
 
 
-router.get("/contacts", usercontroller.getAllData);
+router.get("/", usercontroller.getAllData);
 
-router.get("/contacts/:id", usercontroller.getSingleData);
+router.get("/:id", usercontroller.getSingleData);
+
+router.post("/", usercontroller.createUser);
+
+router.put("/:id", usercontroller.updateUser);
+
+router.delete("/:id", usercontroller.deleteUser);
+
+
+
 
 module.exports = router;
