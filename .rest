@@ -2,6 +2,9 @@
 # Render Deployment
 GET https://cse341-d6px.onrender.com/contacts
 
+###Render get Id
+GET https://cse341-d6px.onrender.com/contacts/6782e156cab999c78478371f HTTP/1.1
+
 ###
 GET http://localhost:3030/
 
@@ -40,3 +43,5 @@ Content-Type: application/json
 ### Delete
 
 DELETE http://localhost:3030/contacts/678584efb12332f4deedf2d9 HTTP/1.1
+
+
